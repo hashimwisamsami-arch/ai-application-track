@@ -9,7 +9,7 @@ export const meta = () => {
   ];
 };
 
-const auth = () => {
+const Auth = () => {
   const { isLoading, auth } = usePuterStore();
   const location = useLocation();
   const next = location.search.split("next=")[1];
@@ -52,4 +52,4 @@ const auth = () => {
   );
 };
 
-export default auth;
+export default Auth;
